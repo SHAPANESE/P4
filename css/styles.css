@@ -1,0 +1,123 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	height: 100%;
+}
+*,
+*::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	height: 100%;
+	background: #e570e7;
+	background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 51%, #a849a3 100%);
+	background: -webkit-linear-gradient(
+		top,
+		#e570e7 0%,
+		#c85ec7 51%,
+		#a849a3 100%
+	);
+	background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 51%, #a849a3 100%);
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7',endColorstr='#a849a3',GRadientType=0);
+	background-attachment: fixed;
+}
+
+/* HEADER */
+
+header {
+	text-align: center;
+	padding: 4rem 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.hero {
+	margin-bottom: 4rem;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.list-products {
+	margin-top: 3rem;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list-products li {
+	float: left;
+	width: 50%;
+	padding: 2rem;
+	text-align: center;
+}
+
+.list-products li:nth-child(2n + 1) {
+	clear: both;
+}
+
+@media (min-width: 768px) {
+	.list-products li {
+		width: 33.3%;
+	}
+
+	.list-products li:nth-child(2n + 1) {
+		clear: unset;
+	}
+
+	.list-products li:nth-child(3n + 1) {
+		clear: both;
+	}
+}
+
+.list-products li img {
+	border: 1rem solid rgba(128, 1, 195, 0.45);
+	transition: border-color 0.5s ease-in-out;
+}
+
+.list-products li img:hover {
+	border: 1rem solid rgba(128, 1, 195, 1);
+}
+
+.list-products li p {
+	font-size: 2.8rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+.list-products li p span {
+	color: #ffce00;
+	font-size: 4rem;
+}
+
+.button {
+	background-color: #ffce00;
+	padding: 1rem 4rem;
+	margin-top: 1rem;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #8001c3;
+	font-size: 1.5rem;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+	background-color: #ebbc00;
+}
